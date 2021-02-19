@@ -3,16 +3,19 @@
     <head>
         <title>CV Najib SEKKOUR</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 
     </head>
-    <body>
-        <header class ="header">
-        <nav>
-            <h1 id ="logo">Najib SEKKOUR</h1>
+
+<div class="container">
+   <div class="row">
+      <div class="col1">
+        <h1 id ="logo">Najib SEKKOUR</h1> 
+      </div>
+      <div class="col2">
+      <nav>
             <ul class="menuD">
                 <li><a href = "#titrePrez">A propos</li>
                 <li><a href = "#titreParc">Ma formation</li>
@@ -20,18 +23,16 @@
                 <li><a href = "contact.php">Contact</li>
              </ul>
         </nav>
-        </header>
-
-        <div class="accueil"> 
+      </div>
+   </div>
+   <div class="row">
             <img id="background" src="img/accueil.png" alt="" />
             <h1 id ="titreAccueil">Bienvenue sur mon site CV <br><br> Najib SEKKOUR</h1>
-            </div>
-            
+   </div>
+   <div class="row">
         <h1 id="titrePrez"> Qui suis-je ? </h1>
 
-        <div class ="Apropos"> 
-
-            
+        <div class="col1">
             <p id = "moi">Je suis Najib SEKKOUR, j'ai 32 ans et je suis actuellement en reconversion professionelle.
             Je suis une formation d'un an au métier de concepteur
             développeur d'applications au cours de laquelle je
@@ -43,14 +44,24 @@
             programmation.
             J'aspire à évoluer vers un poste de chef de projet.
             </p>
-
-            <img id="photo" src="img/najib.png" alt="" />
-          
         </div>
-
-
-        <div class ="parcours"> 
-            <h1 id="titreParc">Ma formation</h1>
+        <div class="col2">
+            <p id="competenceP">Desktop : Java<br></br>
+                Web front : HTML / CSS (Boot STRAP) / JavaScript
+                (vueJS)<br></br>
+                Mobile : NatureScript / Ionic (application Android et ios)
+                Back-end : PHP (Symfony)<br></br>
+                Persistance de données : SQL -> PostGreSQL / MySQL<br></br>
+                GIT HUB
+            </p>
+        </div>
+        <div class="col3">
+            <img id="photo" src="img/najib.png" alt="" />
+        </div>
+      
+   </div>
+    <div class="row">
+        <h1 id="titreParc">Ma formation</h1>
 
             <p id="formation">Actuellement en formation au centre de l'AFPA de Frouard Pompey (54), sur
                 une durée de 11 mois afin d'obtenir un titre professionnel de niveau 6 (bac
@@ -74,34 +85,6 @@
             </p>
         </div>
 
-        <div class ="competence"> 
-            <h1 id="titreComp">Mes compétences</h1>
 
-            <p id="competenceP">Desktop : Java<br></br>
-                Web front : HTML / CSS (Boot STRAP) / JavaScript
-                (vueJS)<br></br>
-                Mobile : NatureScript / Ionic (application Android et ios)
-                Back-end : PHP (Symfony)<br></br>
-                Persistance de données : SQL -> PostGreSQL / MySQL<br></br>
-                GIT HUB
-            </p>
-        </div>
-
-        <div class ="contact"> 
-        <h1 id="titreContact">Prise de contact</h1>
-
-
-            <p id="message">Merci de vous rendre sur la page contact pour creer un compte qui vous permettra de me laisser un message.</p>
-            <br></br>
-            <p id="lien"><a href="contact.php">Cliquez ici pour vous rendre sur la page</a></p>
-        </div>
-
-        <div class ="footer"> 
-            <p id ="corp" >Copyright © 2020 - 2021 by Najib SEKKOUR </p>
-        
-        </div>
-
-
-    </body>
-</html>
-
+   </div>
+</div>

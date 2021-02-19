@@ -1,40 +1,98 @@
-<!DOCTYPE html>
+<?php
+    
+    try
+        {
+        // On se connecte à MySQL
+            $bdd = new PDO('mysql:host=localhost;dbname=espace_membre;charset=utf8', 'root', 'root');
+        }
+        catch(Exception $e)
+                    {
+        // En cas d'erreur, on affiche un message et on arrête tout
+        die('Erreur : '.$e->getMessage());
+        }
+
+
+        // si la variable "$_POST" contient des infos alors on les traites
+
+        if (isset($_POST['inscription']))
+        extract($_POST);
+
+        {
+
+            if(!empty($_POST['identifiant']) && !empty($_POST['mdp']) && !empty($_POST['confirm']))
+
+
+            {
+                echo "ok";
+
+            }
+            else {
+                echo "non";
+
+            }
+        }s
+?>
+
+
+
 <html>
     <head>
         <title>Connexion</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
     </head>
     <body>
-        <h1>Login</h1>
+ 
+    <div class= "titre" style="text-align: center;"><h1 >Inscription</h1> </div>
+    </br></br></br>
 
+
+<div class = "container">
+    <div class = "row">
+
+            </br>
+
+    
         <form action="message.php" method="POST">
+            <div class="col-md-6 offset-3">
+                <label class="form-label">Identifiant</label>
+                <input type="text" class="form-control" name="identifiant" >
+               
+            </div> 
 
-<p>
-    Entrez votre Identifiant :
-</p>
+            <br>
+            
+            <div class="col-md-6 offset-3">
+                <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" name="mdp">
+            </div>
 
-<p>
-    <input type="text" name="ID" />
-    
-</p>
+            <br>
+
+            <div class="col-md-6 offset-3">
+                <label class="form-label">Confirmez mot de passe</label>
+                <input type="password" class="form-control" name="confirm">
+            </div>
+
+            <br>
+
+          
+            
+            </br></br>
+            
+            <button type="submit" class="btn btn-primary col-md-6 offset-3" name="inscription">Je m'inscris</button>
+        </form> 
+    </div>
+</div>
 
 
-<p>
-    Entrez votre mot de passe :
-</p>
-
-<form action="secret.php" method="POST">
-<p>
-    <input type="password" name="Password" />
-    
-</p>
-
-<p><input type="submit"/></p>
-</form>
 
     </body>
 </html>
+
 
 
 
