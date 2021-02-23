@@ -39,14 +39,14 @@ nav ul {
     display: flex;
     flex: 1 1 40rem;
     align-items: center;
-    font-size: 15px;
+    font-size: 10px;
     
 }
 
 #logo{
     color: blanchedalmond;
     align-items: center;
-    font-size: 3px;
+    font-size: 30px;
 }
 
 
